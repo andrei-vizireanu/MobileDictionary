@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrei.dictionar.AddWord">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Word"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Translation"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="add_word"
+        android:text="Add the word!"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/ro1"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/flag_ro" />
+
+    <ImageView
+        android:id="@+id/eng1"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/flag_uk" />
+
+    <ImageView
+        android:id="@+id/ro2"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText2"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/flag_ro" />
+
+    <ImageView
+        android:id="@+id/eng2"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText2"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/flag_uk" />
+</RelativeLayout>
